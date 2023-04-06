@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XN4-oH-AvQ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Mdf-5y-WP0">
+            <objects>
+                <viewController id="XN4-oH-AvQ" customClass="ViewController" customModule="FirebaseEmailPassLoginAdv" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ULe-tm-Bzd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz8-fr-rRQ">
+                                <rect key="frame" x="15" y="59" width="50" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="XN4-oH-AvQ" eventType="touchUpInside" id="jcY-lf-Clp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oda-ky-mwl">
+                                <rect key="frame" x="136" y="698" width="121" height="48"/>
+                                <color key="backgroundColor" red="0.40314656830000001" green="0.56483268040000001" blue="0.71817787239999997" alpha="0.88684809600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logOutAction:" destination="XN4-oH-AvQ" eventType="touchUpInside" id="5Th-0l-bbI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Home Page." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KT-1f-Gyi">
+                                <rect key="frame" x="38.666666666666657" y="380" width="316" height="33.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Mr..!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvz-hX-eXr">
+                                <rect key="frame" x="124.33333333333333" y="229" width="144.33333333333337" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oJh-qf-Eiv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zz8-fr-rRQ" firstAttribute="top" secondItem="oJh-qf-Eiv" secondAttribute="top" id="52M-wo-GRg"/>
+                            <constraint firstItem="0KT-1f-Gyi" firstAttribute="top" secondItem="Zvz-hX-eXr" secondAttribute="bottom" constant="114" id="E3c-Wd-nUn"/>
+                            <constraint firstItem="oJh-qf-Eiv" firstAttribute="bottom" secondItem="Oda-ky-mwl" secondAttribute="bottom" constant="72" id="Ify-fd-vbK"/>
+                            <constraint firstItem="Zvz-hX-eXr" firstAttribute="centerX" secondItem="ULe-tm-Bzd" secondAttribute="centerX" id="LWd-kg-ogg"/>
+                            <constraint firstItem="Zz8-fr-rRQ" firstAttribute="leading" secondItem="oJh-qf-Eiv" secondAttribute="leading" constant="15" id="PJ9-hl-aL3"/>
+                            <constraint firstItem="Zvz-hX-eXr" firstAttribute="top" secondItem="oJh-qf-Eiv" secondAttribute="top" constant="170" id="TA7-B4-1eM"/>
+                            <constraint firstItem="0KT-1f-Gyi" firstAttribute="centerX" secondItem="ULe-tm-Bzd" secondAttribute="centerX" id="VsL-Ol-aVb"/>
+                            <constraint firstItem="Oda-ky-mwl" firstAttribute="centerX" secondItem="ULe-tm-Bzd" secondAttribute="centerX" id="y3e-hj-rMj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLablel" destination="Zvz-hX-eXr" id="j58-iw-tx5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxT-Cc-cXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
