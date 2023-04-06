@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ParentVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ParentVC" customModule="CustomTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yaJ-hU-sKE">
+                                <rect key="frame" x="0.0" y="818" width="393" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wG-Br-XfI">
+                                <rect key="frame" x="10" y="758" width="373" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="QnX-qu-enq">
+                                        <rect key="frame" x="16" y="8" width="341" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksc-Hw-Gme">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="G9F-wf-Sw0"/>
+                                                    <constraint firstAttribute="width" constant="44" id="xTb-cW-an3"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="homekit" catalog="system"/>
+                                                <connections>
+                                                    <action selector="tabBarButtonsAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UcI-Qm-6xC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sY9-ys-Tmc">
+                                                <rect key="frame" x="74.333333333333329" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="PIP-4s-yLg"/>
+                                                    <constraint firstAttribute="width" constant="44" id="s1e-0O-sHI"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="tabBarButtonsAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DdC-gc-NFl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYV-F0-gu4">
+                                                <rect key="frame" x="148.66666666666666" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="mbv-zd-ysI"/>
+                                                    <constraint firstAttribute="width" constant="44" id="r9F-FX-1ed"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="bookmark" catalog="system"/>
+                                                <connections>
+                                                    <action selector="tabBarButtonsAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AHU-Rn-acY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-zg-Aax">
+                                                <rect key="frame" x="222.66666666666666" y="0.0" width="43.999999999999972" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="yyu-o0-24d"/>
+                                                    <constraint firstAttribute="width" constant="44" id="znL-SR-l7R"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="timer" catalog="system"/>
+                                                <connections>
+                                                    <action selector="tabBarButtonsAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="B3W-Fd-56P"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3b-vu-zDb">
+                                                <rect key="frame" x="297" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="Sv0-ld-QJc"/>
+                                                    <constraint firstAttribute="height" constant="44" id="fMq-af-SIu"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="smallcircle.fill.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="tabBarButtonsAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wgf-cF-YG0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstItem="QnX-qu-enq" firstAttribute="centerY" secondItem="8wG-Br-XfI" secondAttribute="centerY" id="7AC-A5-bch"/>
+                                    <constraint firstItem="QnX-qu-enq" firstAttribute="leading" secondItem="8wG-Br-XfI" secondAttribute="leading" constant="16" id="RMV-TY-jwo"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ruj-9q-jAD"/>
+                                    <constraint firstAttribute="trailing" secondItem="QnX-qu-enq" secondAttribute="trailing" constant="16" id="toM-S8-Oje"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8wG-Br-XfI" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="JUM-aR-NDF"/>
+                            <constraint firstItem="8wG-Br-XfI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="iJ1-nJ-5IN"/>
+                            <constraint firstItem="8wG-Br-XfI" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-10" id="la7-tZ-kix"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tabBarView" destination="8wG-Br-XfI" id="Bkm-r0-ANi"/>
+                        <outletCollection property="tabBurButtons" destination="Ksc-Hw-Gme" collectionClass="NSMutableArray" id="hhn-bq-HGC"/>
+                        <outletCollection property="tabBurButtons" destination="sY9-ys-Tmc" collectionClass="NSMutableArray" id="lsa-9U-BBk"/>
+                        <outletCollection property="tabBurButtons" destination="jYV-F0-gu4" collectionClass="NSMutableArray" id="MuJ-CR-GO4"/>
+                        <outletCollection property="tabBurButtons" destination="uhc-zg-Aax" collectionClass="NSMutableArray" id="hdJ-SG-NA7"/>
+                        <outletCollection property="tabBurButtons" destination="B3b-vu-zDb" collectionClass="NSMutableArray" id="wFq-T5-61m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.76335877862595414" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="smallcircle.fill.circle" catalog="system" width="128" height="123"/>
+        <image name="timer" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
