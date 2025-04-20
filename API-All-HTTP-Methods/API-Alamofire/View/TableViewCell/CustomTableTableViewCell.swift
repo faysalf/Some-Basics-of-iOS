@@ -2,7 +2,7 @@
 //  CustomTableTableViewCell.swift
 //  API-Alamofire
 //
-//  Created by Reserveit Support on 25/3/23.
+//  Created by Md. Faysal Ahmed on 25/3/23.
 //
 
 import UIKit
@@ -24,10 +24,10 @@ class CustomTableTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(value: UserInfo) {
-        imgView.loadImageFromUrl(value.img)
+    func configure(value: UserInfoModel) {
+        imgView.loadImageFromUrl(value.avatar)
         id.text = "ID: \(value.id)"
-        name.text = "Name: \(value.name)"
+        name.text = "Name: \(value.firstName + " " + value.lastName)"
     }
     
 }

@@ -2,18 +2,18 @@
 //  API+SingleGet.swift
 //  API-Alamofire
 //
-//  Created by Reserveit Support on 27/3/23.
+//  Created by Md. Faysal Ahmed on 27/3/23.
 //
 
 import Foundation
 
 // MARK: - SingleGetModel
 struct SingleGetModel: Codable {
-    let data: DataClass
+    let data: UserInfoModel
     let support: Support
 }
 
-struct DataClass: Codable {
+struct UserInfoModel: Codable {
     let id: Int
     let email, firstName, lastName: String
     let avatar: String
